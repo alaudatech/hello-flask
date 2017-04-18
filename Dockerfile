@@ -6,6 +6,6 @@ FROM orchardup/python:2.7
 ADD /hello-flask /hello-flask
 RUN pip install -r /hello-flask/requirements.txt
 WORKDIR /hello-flask
-VOLUME /hello-flask
+VOLUME /test
 CMD ["python","app.py"]
 EXPOSE 80
